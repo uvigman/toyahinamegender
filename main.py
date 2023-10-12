@@ -1,5 +1,5 @@
 #region import bailam_f
-from s00_bailam import tongtienmuahang as bailam_f
+from s00_bailam import hi as bailam_f
 #endregion import bailam_f
 
 
@@ -7,7 +7,12 @@ from s00_bailam import tongtienmuahang as bailam_f
 from s02_chambai import chambai
 
 #region testkey_list
-
+testcase_list = [
+  {'tc_name': 'tc0', 'input': {'name':'Mom',    'gender':'f'},   'output':'Hi Ms Mom!'},
+  {'tc_name': 'tc1', 'input': {'name':'Dad',    'gender':'m'},   'output':'Hi Mr Dad!'},
+  {'tc_name': 'tc2', 'input': {'name':'TOYA',   'gender':None},  'output':'Hi TOYA!'},
+  {'tc_name': 'tc3', 'input': {'name':None,     'gender':None},  'output':'Hi!'},
+]
 #endregion testkey_list
 
 ketqua_list = []
